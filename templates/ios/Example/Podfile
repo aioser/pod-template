@@ -1,6 +1,8 @@
-use_frameworks!
+source 'https://github.com/CocoaPods/Specs.git'
+source 'git@coding.jiamiantech.com:ce/LRSDevRepo/LRSRepos.git'
+use_frameworks! :linkage => :static
 
-platform :ios, '10.0'
+platform :ios, '11.0'
 
 target '${POD_NAME}_Example' do
   pod '${POD_NAME}', :path => '../'

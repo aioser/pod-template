@@ -75,7 +75,9 @@ module Pod
       podfile_text = <<-RUBY
 source 'https://github.com/CocoaPods/Specs.git'
 source 'git@coding.jiamiantech.com:ce/LRSDevRepo/LRSRepos.git'
+
 use_frameworks! :linkage => :static
+platform :ios, '11.0'
 target '#{test_target.name}' do
   pod '#{@configurator.pod_name}', :path => '../'
   
